@@ -10,7 +10,37 @@ project 1 - A Random Quote Generator
 /*** 
  * `quotes` array 
 ***/
+  let quotes = [
+    {
+      quote: "We Generate Fears While We Sit. We Overcome Them By Action.",
+      source: "Dr. Henry Link"
 
+    },
+    {
+      quote: "Do. Or do not. There is no try.", 
+      source: "Yoda"
+
+    },
+    {
+      quote: "We May Encounter Many Defeats But We Must Not Be Defeated.",
+      source: "Maya Angelou"
+
+    },
+    {
+      quote: "Knowing Is Not Enough; We Must Apply. Wishing Is Not Enough; We Must Do.",
+      source: "Johann Wolfgang Von Goethe"
+
+    },
+    {
+      quote: "If You Are Working On Something That You Really Care About, You Don’t Have To Be Pushed. The Vision Pulls You.",
+      source: "Steve Jobs"
+
+    },
+
+
+
+
+  ];
 
 
 /***
