@@ -12,7 +12,7 @@ project 1 - A Random Quote Generator
 ***/
   let quotes = [
     {
-      fquote: "We Generate Fears While We Sit. We Overcome Them By Action.",
+      quote: "We Generate Fears While We Sit. We Overcome Them By Action.",
       source: "Dr. Henry Link"
 
     },
@@ -61,12 +61,30 @@ project 1 - A Random Quote Generator
 /***
  * `printQuote` function
 ***/
+  const printQuote = () =>{
+    const randQuote = getRandomQuote();
+    quoteHTML = `<p class="quote">${randQuote.quote}</p>
+    <p class="source">${randQuote.source}`;
+
+    if(randQuote.hasOwnProperty("citation")){
+      quote+= `<span class="citation">${quoteHTML.citation}</span>`;
+
+    }
+
+    if(randQuote.hasOwnProperty("year")){
+      quoteHTML+= `<span class="year">${randQuote.year}</span>`;
+    }
+    quoteHTML+= "</p>";
+
+    return quoteHTML;
+  }
+
 
 
 
 /***
  * click event listener for the print quote button
- * DO NOT CHANGE THE CODE BELOW!!
+ * DO NOT CHANGE THE CODErr BELOW!!
 ***/
 
 document.getElementById('load-quote').addEventListener("click", printQuote, false);
