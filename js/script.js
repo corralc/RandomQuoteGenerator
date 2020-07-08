@@ -12,13 +12,14 @@ project 1 - A Random Quote Generator
 ***/
   let quotes = [
     {
-      quote: "We Generate Fears While We Sit. We Overcome Them By Action.",
+      fquote: "We Generate Fears While We Sit. We Overcome Them By Action.",
       source: "Dr. Henry Link"
 
     },
     {
       quote: "Do. Or do not. There is no try.", 
-      source: "Yoda"
+      source: "Yoda",
+      citation: "Star Wars The Empire Strikes Back"
 
     },
     {
@@ -27,8 +28,9 @@ project 1 - A Random Quote Generator
 
     },
     {
-      quote: "Knowing Is Not Enough; We Must Apply. Wishing Is Not Enough; We Must Do.",
-      source: "Johann Wolfgang Von Goethe"
+      quote: "Just because someone stumbles and loses their path, doesn’t mean they’re lost forever.",
+      source: "Professor X",
+      year: 2014
 
     },
     {
@@ -46,8 +48,15 @@ project 1 - A Random Quote Generator
 /***
  * `getRandomQuote` function
 ***/
+  const getRandomQuote = () =>{
+    const randNum = Math.floor(Math.random() * quotes.length );
+    console.log(randNum);
+    console.log(randNum);
+    return quotes[randNum];
 
+  }
 
+  getRandomQuote();
 
 /***
  * `printQuote` function
